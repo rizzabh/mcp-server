@@ -1,0 +1,22 @@
+{
+  "name": "my-mcp-server",
+  "version": "0.1.0",
+  "description": "A Model Context Protocol server with GitHub API integration",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/mcp-server": "latest",
+    "@octokit/rest": "^19.0.13",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "tsx": "^3.12.10",
+    "typescript": "^5.2.2"
+  }
+}
